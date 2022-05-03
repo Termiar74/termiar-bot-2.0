@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
             .catch(() => null)
         if (!gif) return void (await M.reply(`Couldn't find any matching gif term.`))
         const i = Math.floor(Math.random() * gif.data.results.length)
-        const caption = '🌟 Here you go.'
+        const caption = '👉🏻𝐇𝐄𝐑𝐄 𝐘𝐎𝐔 𝐆𝐎👈🏻'
         return void M.reply(
             await request.buffer(gif.data.results[i].media[0].mp4.url),
             MessageType.video,
