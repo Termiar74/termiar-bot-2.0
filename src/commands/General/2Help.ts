@@ -9,11 +9,11 @@ import request from '../../lib/request'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: '2help',
+            command: '2help','2menu'
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}2help (command_name)`,
-            aliases: ['2h']
+            aliases: ['2h','2m]
         })
     }
 
@@ -36,11 +36,18 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-╭─「(づ￣ 3￣)づ」
-│⋊ ᴜꜱᴇʀ: *${M.sender.username}*
-│⋊ ɴᴀᴍᴇ: ᖇᎥᑎ
-│⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
-│⋊ ᴏᴡɴᴇʀ: <${this.client.config.prefix}mod>
+╭─────────────┈平和
+│🌟𝐇𝐄𝐘 👋 𝐓𝐇𝐈𝐒 𝐇𝐀𝐂𝐊𝐓𝐈 𝐋𝐄𝐕𝐄𝐋 𝐁𝐎𝐓❤️
+│🌟𝐇𝐎𝐖 𝐌𝐀𝐘 𝐈 𝐂𝐀𝐍 𝐇𝐄𝐋𝐏 𝐘𝐎𝐔👀
+│🌟𝐔𝐒𝐄𝐑: *${M.sender.username}*
+│🌟𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐌𝐄 𝐁𝐘 𝐔𝐒𝐈𝐍𝐆 ${this.client.config.prefix}𝐌𝐄𝐍𝐔.
+│🌟𝐍𝐀𝐌𝐄: |ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|
+│🌟𝐏𝐑𝐄𝐅𝐈𝐗: ${this.client.config.prefix}
+│🌟𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐈𝐍 𝐀𝐍𝐘 𝐎𝐓𝐇𝐄𝐑 𝐆𝐑𝐎𝐔𝐏𝐒
+│🌟𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 𝐒𝐈𝐑 𝐇𝐀𝐂𝐊𝐓𝐈𝐕𝐈𝐒𝐓.
+│🌟𝐎𝐖𝐍𝐄𝐑: <${this.client.config.prefix}mod>
+|🌟|ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|
+|🌟|𝐖𝐄 𝐁𝐑𝐄𝐀𝐊 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘😈 𝐍𝐎𝐓 𝐇𝐄𝐀𝐑𝐓❤️|
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -52,10 +59,10 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text}
- ──❅┈[ ᖇᎥᑎ ᗷᗝ丅 ]┈❅───
+ ──❅┈[|ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|]┈❅───
 ┌────────────┈❅
-│   🧨 ᖇᎥᑎ
-│   ©️ Synthesized Infinity Botto
+│   🤍 |ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|
+│   ©️  |𝐇𝐀𝐂𝐊𝐓𝐈𝐕𝐈𝐒𝐓 𝐒𝐈𝐑|
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
