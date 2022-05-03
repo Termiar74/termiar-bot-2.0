@@ -1,5 +1,5 @@
 {
-    "name": "RIN",
+    "name": "LEVEL BOT",
     "description": "Maintained Fork of Void",
     "keywords": [
         "bot",
@@ -12,8 +12,8 @@
         "whatsapp-botto"
     ],
     "website": "https://github.com/Oreki-san/RIN#readme",
-    "repository": "https://github.com/Oreki-san/RIN.git",
-    "logo": "https://user-images.githubusercontent.com/77143046/137623471-cbe3e0f5-eb13-4321-abbd-7a1e6e73f9ce.jpg",
+    "repository": "https://github.com/yashcybrot/hackti-level-bot.git",
+    "logo": "https://i.ibb.co/Mc77hKr/IMG-20220228-WA0024.jpg",
     "success_url": "/",
     "env": {
         "PREFIX": {
