@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
         while (true) {
             try {
                 M.reply(
-                    buffer || 'Could not fetch image. Please try again later',
+                    buffer || '𝐂𝐎𝐔𝐋𝐃 𝐍𝐎𝐓 𝐅𝐄𝐓𝐂𝐇 𝐈𝐌𝐀𝐆𝐄.👉🏻𝐏𝐋𝐄𝐀𝐒𝐄 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 𝐋𝐀𝐓𝐄𝐑😂',
                     MessageType.image,
                     undefined,
                     undefined,
