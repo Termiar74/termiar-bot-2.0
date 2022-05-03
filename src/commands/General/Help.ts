@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['h']
+            aliases: ['h','m','menu']
         })
     }
 
@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
             mimetype: Mimetype.gif,
             caption: `📝 ɴᴏᴛᴇꜱ
 
-〽 ᴛʜɪꜱ ɪꜱ ᴀ ʀɪɴ-ʙᴏᴛᴛᴏ!
+|❏‣ 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐇𝐀𝐂𝐊𝐓𝐈 𝐋𝐄𝐕𝐄𝐋 𝐁𝐎𝐓!
 
 🧧 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
