@@ -9,11 +9,11 @@ import request from '../../lib/request'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: '2help','2menu'
+            command: '2help',
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}2help (command_name)`,
-            aliases: ['2h','2m]
+            aliases: ['2h','2m','2menu']
         })
     }
 
