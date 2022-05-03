@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://ibb.co/wQ4GK21"><img src="https://user-images.githubusercontent.com/77143046/143940049-de5a0b73-0a67-408f-9710-60362feaba75.jpg" alt="whatsapp-botto-rin-init" border="0"></a>
 
-# **RIN : ANIME THEMED WHATSAPP BOT WITH RICH FEATURES**
+# **RIN : ANIME THEMED WHATSAPP BOT WITH RICH NSFW FEATURES**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/oreki-san/rin/badge)](https://www.codefactor.io/repository/github/oreki-san/rin)
 
@@ -33,12 +33,12 @@ Button : If you are deploying from a fork
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [RIN-Guides](https://github.com/Oreki-san/Eru-Guide/blob/main/README.md)
+    [HACKTI-LEVEL-BOT-Guides](https://github.com/Oreki-san/Eru-Guide/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Kaoi_featuresList.md](https://github.com/PrajjwalDatir/Kaoi/blob/main/Features.md)
+    here➡️[Hackti_featuresList.md](https://github.com/PrajjwalDatir/Kaoi/blob/main/Features.md)
 
 ## 💪 Contribution
 
