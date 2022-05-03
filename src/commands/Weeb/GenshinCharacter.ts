@@ -19,25 +19,25 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void (await M.reply(`Please provide the character name.`))
+        if (!joined) return void (await M.reply(`𝐏𝐋𝐄𝐀𝐒𝐄 𝐏𝐑𝐎𝐕𝐈𝐃𝐄 𝐓𝐇𝐄 𝐂𝐇𝐀𝐑𝐀𝐂𝐓𝐄𝐑 𝐍𝐀𝐌𝐄.`))
         const genshin = joined.trim()
         const chara = await genshindb.characters(genshin)
         if (chara === undefined) {
-            return void M.reply('No such character, Baka!')
+            return void M.reply('𝐍𝐎 𝐒𝐔𝐂𝐇 𝐂𝐇𝐀𝐑𝐀𝐂𝐓𝐄𝐑. 𝐁𝐀𝐊𝐀!')
         }
         let text = ''
-        text += `💎 *Name: ${chara.name}*\n`
-        text += `💠 *Elemnent: ${chara.element}*\n`
-        text += `📛 *Weapon: ${chara.weapontype}*\n`
-        text += `🎗 *Speciality: ${chara.substat}*\n`
-        text += `🌟 *Rarity: ${chara.rarity}*\n`
-        text += `🌸 *Gender: ${chara.gender}*\n`
-        text += `❄ *Constellation: ${chara.constellation}*\n`
-        text += `⛩ *Region: ${chara.region}*\n`
-        text += `💮 *Affiliation: ${chara.affiliation}*\n`
-        text += `🎁 *Birthday: ${chara.birthday}*\n\n`
-        text += `💛 *Description: ${chara.description}*\n\n`
-        text += `🌐 *URL: ${chara.url.fandom}*`
+        text += `💎 *𝐍𝐀𝐌𝐄: ${chara.name}*\n`
+        text += `💠 *𝐄𝐋𝐄𝐌𝐄𝐍𝐓: ${chara.element}*\n`
+        text += `📛 *𝐖𝐄𝐀𝐏𝐎𝐍: ${chara.weapontype}*\n`
+        text += `🎗 *𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐈𝐓𝐘: ${chara.substat}*\n`
+        text += `🌟 *𝐑𝐀𝐑𝐄𝐈𝐓𝐘: ${chara.rarity}*\n`
+        text += `🌸 *𝐆𝐄𝐍𝐃𝐄𝐑: ${chara.gender}*\n`
+        text += `❄ *𝐂𝐎𝐍𝐒𝐓𝐄𝐋𝐋𝐀𝐓𝐈𝐎𝐍: ${chara.constellation}*\n`
+        text += `⛩ *𝐑𝐄𝐈𝐆𝐎𝐍: ${chara.region}*\n`
+        text += `💮 *𝐀𝐅𝐅𝐈𝐋𝐈𝐀𝐓𝐈𝐎𝐍: ${chara.affiliation}*\n`
+        text += `🎁 *𝐁𝐈𝐑𝐓𝐇𝐃𝐀𝐘: ${chara.birthday}*\n\n`
+        text += `💛 *𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍: ${chara.description}*\n\n`
+        text += `🌐 *𝐔𝐑𝐋: ${chara.url.fandom}*`
         const buffer = await request.buffer(chara.images.cover1).catch((e) => {
             return void M.reply(e.message)
         })
