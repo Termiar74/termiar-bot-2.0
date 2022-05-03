@@ -30,11 +30,11 @@ export default class Command extends BaseCommand {
         })
         if (!term)
             return void M.reply(
-                `🪧 *OPTIONS:*\n${text}Use ${this.client.config.prefix}ac (option) to get Characters\nExample: ${this.client.config.prefix}ac neko`
+                `🪧 *𝐎𝐏𝐓𝐈𝐎𝐍𝐒:*\n${text}𝐔𝐒𝐄 ${this.client.config.prefix}ac (option) to get Characters\nExample: ${this.client.config.prefix}ac neko`
             )
         if (!char.includes(term))
             return void M.reply(
-                `🧧 Invalid option! 🧧\nUse ${this.client.config.prefix}ac to see all available options`
+                `🔥 𝐈𝐍𝐕𝐀𝐋𝐈𝐃 𝐎𝐏𝐓𝐈𝐎𝐍𝐒! 💥\n𝐔𝐒𝐄 ${this.client.config.prefix}ac to see all available options`
             )
 
         // fetch result of https://waifu.pics/api/sfw from the API using axios
