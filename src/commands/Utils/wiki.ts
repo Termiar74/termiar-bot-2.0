@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
 		const query = joined.trim();
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const results = await wiki.summary(query);
-		const text = `*🌐 URL: ${results.content_urls.mobile.page}*\n\n*🎀 Title: ${results.title}*\n *📜 Description: ${results.description}*\n\n*❄ Summary:* ${results.extract}`;
+		const text = `*🌐 𝐔𝐑𝐋: ${results.content_urls.mobile.page}*\n\n*🎀 𝐓𝐈𝐓𝐋𝐄: ${results.title}*\n *📜 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍: ${results.description}*\n\n*❄ 𝐒𝐔𝐌𝐌𝐀𝐑𝐘:* ${results.extract}`;
 		await M.reply(text);
 	};
 }
