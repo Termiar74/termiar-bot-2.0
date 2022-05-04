@@ -49,42 +49,42 @@ export default class Command extends BaseCommand {
 
 |🌟 ＰＲＥＦＩＸ = ${this.client.config.prefix}
 ┌────────────┈❅
-|三 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 三 
+|三➽𝐆𝐄𝐍𝐄𝐑𝐀𝐋三 
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ1 [${this.client.config.prefix}ｈ１]
 |
-|三 𝐖𝐄𝐄𝐁𝐒 三 
+|三➽ 𝐖𝐄𝐄𝐁𝐒三 
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ2 [${this.client.config.prefix}ｈ2]
 |
-|三 𝐅𝐔𝐍 三
+|三➽𝐅𝐔𝐍三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ3 [${this.client.config.prefix}ｈ3]
 |
-|三 𝐌𝐄𝐃𝐈𝐀 三
+|三➽𝐌𝐄𝐃𝐈𝐀三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ4 [${this.client.config.prefix}ｈ4]
 |
-|三 𝐔𝐓𝐈𝐋𝐒 三
+|三➽𝐔𝐓𝐈𝐋𝐒三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ5 [${this.client.config.prefix}ｈ5]
 |
-|三 𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐈𝐎𝐍 三
+|三➽𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐈𝐎𝐍三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ6 [${this.client.config.prefix}ｈ6]
 |
-|三 𝐄𝐃𝐔𝐂𝐀𝐓𝐈𝐕𝐄 三
+|三➽𝐄𝐃𝐔𝐂𝐀𝐓𝐈𝐕𝐄三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ7 [${this.client.config.prefix}ｈ7]
 |
-|三 𝐍𝐒𝐅𝐖 三
+|三➽𝐍𝐒𝐅𝐖三
 |
 |❐ ${this.client.config.prefix}Ｈｅｌｐ8 [${this.client.config.prefix}ｈ8
 └────────────┈⁂
- ──❅┈[|ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|]┈❅───
+ ──❅┈[|ད|𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓 𝟐.𝟎|ཌ|]┈❅───
 ┌────────────┈❅
-│   ❐ |ད𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓🎭ཌ|
-│   ©️ |𝐇𝐀𝐂𝐊𝐓𝐈𝐕𝐈𝐒𝐓 𝐒𝐈𝐑|
+│   ❐ |ད|𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓 𝟐.𝟎|ཌ|
+│   ©️ ||𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐒𝐈𝐑|
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
