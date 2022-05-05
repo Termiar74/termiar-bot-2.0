@@ -24,11 +24,11 @@
         },
         "MODS": {
             "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-            "required": false
+            "required": true
         },
         "CRON": {
             "description": "Cron string to clear chats in a cycle",
-            "required": false
+            "required": true
         },
         "MONGO_URI": {
             "description": "A secret String for Mongodb Connection.(Required)"
@@ -39,15 +39,15 @@
         },
         "CHAT_BOT_URL": {
             "description": "BrainShop API Brain url",
-            "required": false
+            "required": true
         },
         "TENOR_API_KEY": {
             "description": "A key used for gif searches",
-            "required": false
+            "required": truee
         },
         "WEATHER_APPID": {
             "description": "A key used to see the weather updates",
-            "required": false
+            "required": true
         }
     },
     "buildpacks": [
