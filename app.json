@@ -43,7 +43,7 @@
         },
         "TENOR_API_KEY": {
             "description": "A key used for gif searches",
-            "required": truee
+            "required": true
         },
         "WEATHER_APPID": {
             "description": "A key used to see the weather updates",
