@@ -5,6 +5,7 @@ import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 
+
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
@@ -13,7 +14,7 @@ export default class Command extends BaseCommand {
             description: 'Converts images/videos into stickers',
             category: 'utils',
             usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]]`,
-            baseXp: 30
+            baseXp: 30 
         })
     }
 
@@ -42,58 +43,67 @@ export default class Command extends BaseCommand {
                 : 50
         }
 
-        let quality = getQuality()
-        if (quality > 100 || quality < 1) quality = 50
+        let quality = getQuality();
+				if (quality > 100 || quality < 1) quality = 50;
 
-        parsedArgs.flags.forEach((flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, '')))
-        const getOptions = () => {
-            const pack = parsedArgs.joined.split('|')
-            const categories = (() => {
-                const categories = parsedArgs.flags.reduce((categories, flag) => {
-                    switch (flag) {
-                        case '--angry':
-                            categories.push('💢')
-                            break
-                        case '--love':
-                            categories.push('💕')
-                            break
-                        case '--sad':
-                            categories.push('😭')
-                            break
-                        case '--happy':
-                            categories.push('😂')
-                            break
-                        case '--greet':
-                            categories.push('👋')
-                            break
-                        case '--celebrate':
-                            categories.push('🎊')
-                            break
-                    }
-                    return categories
-                }, new Array<Categories>())
-                categories.length = 2
-                if (!categories[0]) categories.push('❤', '🌹')
-                return categories
-            })()
-            return {
-                categories,
-                pack: pack[1] || '♥️𝐇𝐀𝐂𝐊𝐓𝐈-𝐋𝐄𝐕𝐄𝐋-𝐁𝐎𝐓♥️ ',
-                author: pack[2] || '꧁𓊈𒆜Şti¢kēr𒆜𓊉꧂ ',
-                quality,
-                type: StickerTypes[
-                    parsedArgs.flags.includes('--crop') || parsedArgs.flags.includes('--c')
-                        ? 'CROPPED'
-                        : parsedArgs.flags.includes('--stretch') || parsedArgs.flags.includes('--s')
-                        ? 'DEFAULT'
-                        : 'FULL'
-                ]
-            }
-        }
-        parsedArgs.flags.forEach((flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, '')))
-        if (!buffer) return void M.reply(`You didn't provide any Image/Video to convert`)
-        const sticker = await new Sticker(buffer, getOptions()).build().catch(() => null)
-        if (!sticker) return void M.reply(`An Error Occurred While Converting`)
+				parsedArgs.flags.forEach(
+					(flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, ""))
+				);
+				const getOptions = () => {
+					const pack = parsedArgs.joined.split("|");
+					const categories = (() => {
+						const categories = parsedArgs.flags.reduce((categories, flag) => {
+							switch (flag) {
+								case "--angry":
+									categories.push("💢");
+									break;
+								case "--love":
+									categories.push("💕");
+									break;
+								case "--sad":
+									categories.push("😭");
+									break;
+								case "--happy":
+									categories.push("😂");
+									break;
+								case "--greet":
+									categories.push("👋");
+									break;
+								case "--celebrate":
+									categories.push("🎊");
+									break;
+							}
+							return categories;
+						}, new Array<Categories>());
+						categories.length = 2;
+						if (!categories[0]) categories.push("❤", "🌹");
+						return categories;
+					})();
+					return {
+						categories,
+						pack: pack[1] || "❤️𝐇𝐄𝐑𝐄 𝐈𝐒 𝐘𝐎𝐔𝐑 𝐒𝐓𝐈𝐂𝐊𝐄𝐑👀",
+						author: pack[2] || "◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤",
+						quality,
+						type: StickerTypes[
+							parsedArgs.flags.includes("--crop") ||
+							parsedArgs.flags.includes("--c")
+								? "CROPPED"
+								: parsedArgs.flags.includes("--stretch") ||
+								  parsedArgs.flags.includes("--s")
+								? "DEFAULT"
+								: "FULL"
+						],
+					};
+				};
+				parsedArgs.flags.forEach(
+					(flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, ""))
+				);
+				if (!buffer)
+					return void M.reply(`You didn't provide any Image/Video to convert`);
+				const sticker = await new Sticker(buffer, getOptions())
+					.build()
+					.catch(() => null);
+				if (!sticker) return void M.reply(`An Error Occurred While Converting`);
         await M.reply(sticker, MessageType.sticker, Mimetype.webp)
     }
 }
